@@ -36,6 +36,4 @@ body {
     var(--tabs-bg-two)
   );
   box-shadow: -1.5px -1.5px 2px -2px var(--white), 2px 2px 2px -3px var(--white);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
