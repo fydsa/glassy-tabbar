@@ -1,8 +1,9 @@
 :root {
   --page-bg-one: #fe7630;
   --page-bg-two: #ffc711;
-  --tabs-bg-one: #ffb356;
-  --tabs-bg-two: #ffe24b;
+  --tabs-bg-one: rgba(255, 164, 59, 57%);
+  --tabs-bg-two: rgba(255, 244, 198, 67%);
+  --white: #ffffff;
 }
 
 * {
@@ -22,4 +23,19 @@ body {
   );
   width: 100vw;
   height: 100vh;
+}
+
+.tabs {
+  position: relative;
+  width: 280px;
+  height: 80px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--tabs-bg-one),
+    var(--tabs-bg-two)
+  );
+  box-shadow: -1.5px -1.5px 2px -2px var(--white), 2px 2px 2px -3px var(--white);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
