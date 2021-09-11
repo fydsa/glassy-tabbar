@@ -1,0 +1,25 @@
+:root {
+  --page-bg-one: #fe7630;
+  --page-bg-two: #ffc711;
+  --tabs-bg-one: #ffb356;
+  --tabs-bg-two: #ffe24b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--page-bg-one),
+    var(--page-bg-two)
+  );
+  width: 100vw;
+  height: 100vh;
+}
