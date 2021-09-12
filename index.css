@@ -27,6 +27,9 @@ body {
 
 .tabs {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 80px;
   border-radius: 15px;
@@ -36,4 +39,20 @@ body {
     var(--tabs-bg-two)
   );
   box-shadow: -1.5px -1.5px 2px -2px var(--white), 2px 2px 2px -3px var(--white);
+}
+
+.tab {
+  position: absolute;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  fill: #4691f6;
+  background-color: red;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
