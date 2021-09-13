@@ -50,12 +50,12 @@ body {
 }
 
 svg {
-  display: none;
+  /* display: none; */
 }
 
 .svg-icon {
-  width: 1em;
-  height: 1em;
+  width: 20px;
+  height: 20px;
   fill: #4691f6;
   background-color: red;
 }
@@ -63,4 +63,20 @@ svg {
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1;
+}
+
+input {
+  display: none;
+}
+
+.svg-icon-deactive {
+  fill: var(--white);
+  stroke: var(--white);
+  display: inline;
+  width: 10px;
+  height: 10px;
+}
+
+.svg-icon-active {
+  display: none;
 }
