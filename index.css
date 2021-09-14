@@ -51,6 +51,7 @@ body {
 
 svg {
   /* display: none; */
+  width: 30px;
 }
 
 .svg-icon {
