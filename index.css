@@ -49,14 +49,22 @@ body {
   align-items: center;
 }
 
+label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 svg {
-  /* display: none; */
-  width: 30px;
+  width: 40px;
+  position: relative;
 }
 
 .svg-icon {
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   fill: #4691f6;
   background-color: red;
 }
@@ -64,10 +72,6 @@ svg {
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1;
-}
-
-input {
-  display: none;
 }
 
 .svg-icon-deactive {
@@ -81,3 +85,40 @@ input {
 .svg-icon-active {
   display: none;
 }
+
+input {
+  display: none;
+}
+
+input:checked + label svg > use.tab-deactive {
+  display: none;
+}
+
+input:checked + label svg > symbol#home-active {
+  display: block;
+  fill: var(--white);
+}
+
+/* #tab-two:checked,
+symbol#message-active {
+  display: block;
+  fill: var(--white);
+}
+
+#tab-three:checked,
+symbol#setting-active {
+  display: block;
+  fill: var(--white);
+}
+
+#tab-one:checked,
+symbol#home-active {
+  display: block;
+  fill: var(--white);
+}
+
+#tab-one:checked,
+symbol#delete-active {
+  display: block;
+  fill: var(--white);
+} */
