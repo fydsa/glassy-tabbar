@@ -2,7 +2,7 @@
   --page-bg-one: #fe7630;
   --page-bg-two: #ffc711;
   --tabs-bg-one: rgba(255, 164, 59, 57%);
-  --tabs-bg-two: rgba(255, 244, 198, 67%);
+  --tabs-bg-two: rgb(255, 251, 148, 67%);
   --white: #ffffff;
 }
 
@@ -38,7 +38,11 @@ body {
     var(--tabs-bg-one),
     var(--tabs-bg-two)
   );
-  box-shadow: -1.5px -1.5px 2px -2px var(--white), 2px 2px 2px -3px var(--white);
+  box-shadow: -1.5px -1.5px 2px -2px var(--white),
+    5px 5px 30px rgb(0, 0, 0, 0.2);
+  border: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
+    rgba(255, 255, 255, 0.3);
 }
 
 .tab {
@@ -60,18 +64,6 @@ label {
 svg {
   width: 40px;
   position: relative;
-}
-
-.svg-icon {
-  /* width: 20px;
-  height: 20px; */
-  fill: #4691f6;
-  background-color: red;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
 }
 
 .svg-icon-deactive {
