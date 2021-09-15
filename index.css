@@ -82,43 +82,16 @@ svg {
   height: 10px;
 }
 
-.svg-icon-active {
+input,
+label svg use.tab-active {
   display: none;
 }
 
-input {
+input:checked + label svg use.tab-deactive {
   display: none;
 }
 
-input:checked + label svg > use.tab-deactive {
-  display: none;
-}
-
-input:checked + label svg > symbol#home-active {
+input:checked + label svg use.tab-active {
   display: block;
   fill: var(--white);
 }
-
-/* #tab-two:checked,
-symbol#message-active {
-  display: block;
-  fill: var(--white);
-}
-
-#tab-three:checked,
-symbol#setting-active {
-  display: block;
-  fill: var(--white);
-}
-
-#tab-one:checked,
-symbol#home-active {
-  display: block;
-  fill: var(--white);
-}
-
-#tab-one:checked,
-symbol#delete-active {
-  display: block;
-  fill: var(--white);
-} */
