@@ -30,8 +30,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 280px;
-  height: 80px;
+  width: 300px;
+  height: 95px;
   border-radius: 15px;
   background-image: linear-gradient(
     to bottom right,
@@ -75,23 +75,38 @@ svg {
 }
 
 input,
-label svg use.tab-active {
+use.tab-active {
   display: none;
 }
 
 input:checked + label svg use.tab-active {
-  animation: clip-animation 0.5s ease 0.3s;
+  transform-origin: 50% 50%;
+  animation: fill-animation 0.9s ease 0.1s;
   animation-fill-mode: forwards;
   display: block;
   fill: none;
 }
 
-@keyframes clip-animation {
+label:hover {
+  animation: scale-animation 0.9s ease 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill-animation {
   from {
     clip-path: circle(0% at 50% 100%);
   }
   to {
     clip-path: circle(110% at bottom);
     fill: var(--white);
+  }
+}
+
+@keyframes scale-animation {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.05);
   }
 }
