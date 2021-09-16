@@ -92,6 +92,21 @@ label:hover {
   animation-fill-mode: forwards;
 }
 
+.indicator {
+  position: absolute;
+  width: 30px;
+  height: 16px;
+  border-radius: 50%;
+  top: 79px;
+  transition: 0.3s ease-in-out;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+}
+
 @keyframes fill-animation {
   from {
     clip-path: circle(0% at 50% 100%);
