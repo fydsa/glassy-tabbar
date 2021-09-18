@@ -14,21 +14,25 @@ function clickTab() {
   indicator.style.left = `${active_tab.offsetLeft + 12}px`;
   let active_tab_number = active_tab.getAttribute("for");
 
-  switch (true) {
-    case active_tab_number === "tab-one":
-      indicator.style.backgroundColor = "#e2921a";
-      indicator.style.setProperty("--indicator", "#e2921a");
+  switch (active_tab_number) {
+    case "tab-one":
+      indicator.style.backgroundColor = "#e18e1c";
+      indicator.style.setProperty("--indicator", "#e18e1c");
       break;
-    case active_tab_number === "tab-two" || active_tab_number === "tab-three":
-      indicator.style.backgroundColor = "#e29818";
-      indicator.style.setProperty("--indicator", "#e29818");
+    case "tab-two":
+      indicator.style.backgroundColor = "#e3911a";
+      indicator.style.setProperty("--indicator", "#e3911a");
       break;
-    case active_tab_number === "tab-four":
-      indicator.style.backgroundColor = "#e09916";
-      indicator.style.setProperty("--indicator", "#e09916");
+    case "tab-three":
+      indicator.style.backgroundColor = "#e6961a";
+      indicator.style.setProperty("--indicator", "#e6961a");
+      break;
+    case "tab-four":
+      indicator.style.backgroundColor = "#e39519";
+      indicator.style.setProperty("--indicator", "#e39519");
       break;
     default:
-      indicator.style.backgroundColor = "#e2921a";
-      indicator.style.setProperty("--indicator", "#e2921a");
+      indicator.style.backgroundColor = "#e18e1c";
+      indicator.style.setProperty("--indicator", "#e18e1c");
   }
 }
