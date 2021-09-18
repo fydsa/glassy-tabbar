@@ -5,13 +5,13 @@ const indicator = document.querySelector(".indicator");
 tabs.forEach((el) => el.addEventListener("click", clickTab));
 
 const active_tab = document.querySelector("input:checked + label");
-indicator.style.left = `${active_tab.offsetLeft + 5}px`;
+indicator.style.left = `${active_tab.offsetLeft + 12}px`;
 indicator.style.backgroundColor = "#e2921a";
 indicator.style.setProperty("--indicator", "#e2921a");
 
 function clickTab() {
   let active_tab = document.querySelector("input:checked + label");
-  indicator.style.left = `${active_tab.offsetLeft + 5}px`;
+  indicator.style.left = `${active_tab.offsetLeft + 12}px`;
   let active_tab_number = active_tab.getAttribute("for");
 
   switch (true) {
