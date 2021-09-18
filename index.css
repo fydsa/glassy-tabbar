@@ -102,9 +102,32 @@ label:hover {
   border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
 
+.indicator-animation {
+  animation: scale-indicator-animation 0.9s ease 0.3s;
+}
+
 .indicator::before {
   content: "";
   position: absolute;
+  border-right: 4px solid var(--indicator);
+  border-radius: 0% 35% 51% 0/0% 100% 78% 0;
+  width: 12px;
+  height: 11.5px;
+  left: -11.5px;
+  top: 3px;
+  transform: rotate(36deg);
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  border-left: 4px solid var(--indicator);
+  border-radius: 35% 0% 0% 51%/100% 0% 0% 78%;
+  width: 12px;
+  height: 11.5px;
+  left: 25.5px;
+  top: 3px;
+  transform: rotate(-36deg);
 }
 
 @keyframes fill-animation {
@@ -123,5 +146,14 @@ label:hover {
   }
   to {
     transform: scale(1.05);
+  }
+}
+
+@keyframes scale-indicator-animation {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
