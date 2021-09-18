@@ -24,8 +24,8 @@ function clickTab() {
       indicator.style.setProperty("--indicator", "#e3911a");
       break;
     case "tab-three":
-      indicator.style.backgroundColor = "#e6961a";
-      indicator.style.setProperty("--indicator", "#e6961a");
+      indicator.style.backgroundColor = "#e1921a";
+      indicator.style.setProperty("--indicator", "#e1921a");
       break;
     case "tab-four":
       indicator.style.backgroundColor = "#e39519";
