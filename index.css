@@ -81,7 +81,7 @@ use.tab-active {
 
 input:checked + label svg use.tab-active {
   transform-origin: 50% 50%;
-  animation: fill-animation 0.9s ease 0.1s;
+  animation: fill-animation 0.9s ease 0.3s;
   animation-fill-mode: forwards;
   display: block;
   fill: none;
@@ -137,8 +137,7 @@ label:hover {
   height: 8px;
   border-radius: 50%;
   background-color: var(--white);
-  left: 31px;
-  top: 75px;
+  transition: top 0.2s ease-in-out;
 }
 
 @keyframes fill-animation {
