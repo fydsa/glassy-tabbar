@@ -131,6 +131,16 @@ label:hover {
   transform: rotate(-36deg);
 }
 
+.indicator-drop {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--white);
+  left: 31px;
+  top: 75px;
+}
+
 @keyframes fill-animation {
   from {
     clip-path: circle(0% at 50% 100%);
