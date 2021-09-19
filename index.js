@@ -14,6 +14,11 @@ function clickTab() {
   indicator.style.left = `${active_tab.offsetLeft + 12}px`;
   let active_tab_number = active_tab.getAttribute("for");
 
+  indicator.className = "indicator indicator-animation";
+  setTimeout(() => {
+    indicator.className = "indicator";
+  }, 500);
+
   switch (active_tab_number) {
     case "tab-one":
       indicator.style.backgroundColor = "#e18e1c";
