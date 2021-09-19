@@ -3,6 +3,8 @@
   --page-bg-two: #ffc711;
   --tabs-bg-one: rgba(255, 164, 59, 57%);
   --tabs-bg-two: rgb(255, 251, 148, 67%);
+  --reference: rgb(133, 0, 167);
+  --reference-hover: rgb(103, 0, 129);
   --white: #ffffff;
 }
 
@@ -138,6 +140,21 @@ label:hover {
   border-radius: 50%;
   background-color: var(--white);
   transition: top 0.2s ease-in-out;
+}
+
+.reference {
+  position: absolute;
+  align-self: flex-end;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: var(--reference);
+}
+
+a:hover {
+  color: var(--reference-hover);
 }
 
 @keyframes fill-animation {

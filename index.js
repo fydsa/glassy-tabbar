@@ -15,9 +15,6 @@ indicator_drop.style.left = "31px";
 indicator_drop.style.top = "75px";
 indicator_drop.style.opacity = "0";
 
-// left: 31px;
-//   top: 75px;
-
 function clickTab() {
   let active_tab = document.querySelector("input:checked + label");
   indicator.style.left = `${active_tab.offsetLeft + 12}px`;
